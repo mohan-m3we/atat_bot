@@ -153,7 +153,7 @@ def respond(voice_data):
         book_appointment()
     elif "search" in voice_data:
         query = voice_data.split("search", 1)[1].strip()
-        google_search(query)
+        google_search(input("Type which car u want to search:")
     elif "open tata motors website" in voice_data:
         open_tata_motors()
     elif "tata nexon" in voice_data:
